@@ -1,0 +1,82 @@
+shape: ShortWide
+tags:
+  - HighPriorityFeature
+  - AllowExceedNodeBorders 
+forceBiome: biomes/Jungle/Basic
+borders:
+  - 1
+  - 2
+blobSize:
+  min: 10
+  max: 14
+internalMobs:
+  - type: Glom
+    count:
+      min: 0
+      max: 1
+  - type: Drecko
+    count:
+      min: 0
+      max: 1
+  - type: SwampLily
+    count:
+      min: 0
+      max: 2
+  - type: SpiceVine
+    count:
+      min: 0
+      max: 2
+  - type: SpiceVineSeed
+    count:
+      min: 0
+      max: 2
+  - type: LeafyPlant
+    count:
+      min: 0
+      max: 2
+  - type: LeafyPlantSeed
+    count:
+      min: 0
+      max: 2
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Hydrogen
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+      - element: ChlorineGas
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+  RoomBorderChoices0:
+    selectionMethod: WeightedResample
+    choices:
+      - element: IgneousRock
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+      - element: Phosphorite
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+  RoomBorderChoices1:
+    selectionMethod: WeightedResample
+    choices:
+      - element: IgneousRock
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+      - element: Phosphorite
+        weight: 1
+        overrides:
+          temperatureOverride: 318
+      - element: IronOre
+        weight: 2
+        overrides:
+          temperatureOverride: 318
+      - element: Carbon
+        weight: 2
+        overrides:
+          temperatureOverride: 318

@@ -1,0 +1,30 @@
+shape: TallThin
+tags:
+  - HighPriorityFeature
+  - AllowExceedNodeBorders 
+borders:
+  - 2
+  - 2
+blobSize:
+  min: 30
+  max: 50
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: PickOneWeighted
+    choices:
+      - element: Vacuum
+        weight: 1
+  RoomBorderChoices0:
+    selectionMethod: PickOneWeighted
+    choices:
+      - element: IgneousRock
+        weight: 1
+      - element: Granite
+        weight: 1
+      - element: Obsidian
+        weight: 1
+  RoomBorderChoices1:
+    selectionMethod: PickOneWeighted
+    choices:
+      - element: Katairite
+        weight: 1

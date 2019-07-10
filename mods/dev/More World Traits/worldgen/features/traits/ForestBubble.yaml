@@ -1,0 +1,78 @@
+shape: ShortWide
+tags:
+  - HighPriorityFeature
+  - AllowExceedNodeBorders 
+forceBiome: biomes/Forest/Basic
+borders:
+  - 1
+  - 2
+blobSize:
+  min: 10
+  max: 14
+internalMobs:
+  - type: Oxyfern
+    count:
+      min: 0
+      max: 2
+  - type: ForestTree
+    count:
+      min: 0
+      max: 2
+  - type: BasicSingleHarvestPlant
+    count:
+      min: 0
+      max: 2
+  - type: BasicSingleHarvestPlantSeed
+    count:
+      min: 0
+      max: 2
+  - type: ForestForagePlantPlanted
+    count:
+      min: 0
+      max: 2
+  - type: LightBug
+    count:
+      min: 0
+      max: 1
+  - type: LeafyPlant
+    count:
+      min: 0
+      max: 2
+  - type: LeafyPlantSeed
+    count:
+      min: 0
+      max: 2
+  - type: Squirrel
+    count:
+      min: 0
+      max: 1
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Oxygen
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+  RoomBorderChoices0:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Dirt
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+  RoomBorderChoices1:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Dirt
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+      - element: IgneousRock
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+      - element: AluminumOre
+        weight: 2
+        overrides:
+          temperatureOverride: 295

@@ -1,0 +1,6 @@
+name: STRINGS.WORLD_TRAITS.GASPOCKETS.NAME
+description: STRINGS.WORLD_TRAITS.GASPOCKETS.DESCRIPTION
+colorHex: 9231C0
+
+globalFeatureMods:
+  features/traits/GasPocket: 12

@@ -300,3 +300,14 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+RetiredColonies/
+save_files/
+mods/Steam/
+keybindings.json
+kplayerprefs.yaml
+unlocks.json
+WorldGenDataSave.dat
+WorldGenSimSave.dat
+mods/moddb.json
+mods/mods.json

@@ -1,0 +1,86 @@
+shape: ShortWide
+tags:
+  - HighPriorityFeature
+  - AllowExceedNodeBorders 
+forceBiome: biomes/HotMarsh/Basic
+borders:
+  - 1
+  - 2
+blobSize:
+  min: 10
+  max: 14
+internalMobs:
+  - type: MushroomPlant
+    count:
+      min: 0
+      max: 2
+  - type: MushroomSeed
+    count:
+      min: 0
+      max: 2
+  - type: Puft
+    count:
+      min: 0
+      max: 1
+  - type: BasicFabricPlant
+    count:
+      min: 0
+      max: 2
+  - type: BasicFabricMaterialPlantSeed
+    count:
+      min: 0
+      max: 2
+  - type: Pacu
+    count:
+      min: 0
+      max: 1
+  - type: BulbPlant
+    count:
+      min: 0
+      max: 2
+  - type: BulbPlantSeed
+    count:
+      min: 0
+      max: 2
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: WeightedResample
+    choices:
+      - element: ContaminatedOxygen
+        weight: 2
+        overrides:
+          temperatureOverride: 305
+      - element: DirtyWater
+        weight: 1
+        overrides:
+          temperatureOverride: 305
+  RoomBorderChoices0:
+    selectionMethod: WeightedResample
+    choices:
+      - element: SlimeMold
+        weight: 2
+        overrides:
+          temperatureOverride: 305
+          diseaseOverride: SlimeLung
+          diseaseAmountOverride: 1000000
+      - element: Algae
+        weight: 1
+        overrides:
+          temperatureOverride: 305
+  RoomBorderChoices1:
+    selectionMethod: WeightedResample
+    choices:
+      - element: SlimeMold
+        weight: 1
+        overrides:
+          temperatureOverride: 305
+          diseaseOverride: SlimeLung
+          diseaseAmountOverride: 1000000
+      - element: Clay
+        weight: 2
+        overrides:
+          temperatureOverride: 305
+      - element: SedimentaryRock
+        weight: 1
+        overrides:
+          temperatureOverride: 305

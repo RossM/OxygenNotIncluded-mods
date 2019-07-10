@@ -1,0 +1,94 @@
+shape: ShortWide
+tags:
+  - HighPriorityFeature
+  - AllowExceedNodeBorders 
+forceBiome: biomes/Sedimentary/Basic
+borders:
+  - 1
+  - 2
+blobSize:
+  min: 10
+  max: 14
+internalMobs:
+  - type: LightBug
+    count:
+      min: 0
+      max: 1
+  - type: PrickleFlower
+    count:
+      min: 0
+      max: 2
+  - type: PrickleFlowerSeed
+    count:
+      min: 0
+      max: 2
+  - type: PrickleGrass
+    count:
+      min: 0
+      max: 2
+  - type: PrickleGrassSeed
+    count:
+      min: 0
+      max: 2
+  - type: Hatch
+    count:
+      min: 0
+      max: 1
+  - type: HatchBuried
+    count:
+      min: 0
+      max: 1
+  - type: BasicSingleHarvestPlant
+    count:
+      min: 0
+      max: 2
+  - type: BasicSingleHarvestPlantSeed
+    count:
+      min: 0
+      max: 2
+  - type: BasicForagePlant
+    count:
+      min: 0
+      max: 2
+  - type: BasicForagePlantPlanted
+    count:
+      min: 0
+      max: 2
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Oxygen
+        weight: 3
+        overrides:
+          temperatureOverride: 295
+      - element: CarbonDioxide
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+  RoomBorderChoices0:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Dirt
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+  RoomBorderChoices1:
+    selectionMethod: WeightedResample
+    choices:
+      - element: Dirt
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+      - element: Sand
+        weight: 1
+        overrides:
+          temperatureOverride: 295
+      - element: SandStone
+        weight: 2
+        overrides:
+          temperatureOverride: 295
+      - element: Cuprite
+        weight: 2
+        overrides:
+          temperatureOverride: 295

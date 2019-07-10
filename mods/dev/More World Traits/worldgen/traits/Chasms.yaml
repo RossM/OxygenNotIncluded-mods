@@ -1,0 +1,6 @@
+name: STRINGS.WORLD_TRAITS.CHASMS.NAME
+description: STRINGS.WORLD_TRAITS.CHASMS.DESCRIPTION
+colorHex: 8494A1
+
+globalFeatureMods:
+  features/traits/Chasm: 4

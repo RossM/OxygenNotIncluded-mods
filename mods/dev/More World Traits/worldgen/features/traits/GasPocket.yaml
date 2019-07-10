@@ -1,0 +1,32 @@
+tags:
+  - AllowExceedNodeBorders
+shape: Blob
+blobSize:
+  min: 2.1
+  max: 3.6
+ElementChoiceGroups:
+  RoomCenterElements:
+    selectionMethod: PickOneWeighted
+    choices:
+      - element: CarbonDioxide
+        weight: 1       
+        overrides:
+          massMultiplier: 50
+      - element: ChlorineGas
+        weight: 1       
+        overrides:
+          massMultiplier: 50
+      - element: ContaminatedOxygen
+        weight: 1       
+        overrides:
+          massMultiplier: 50
+          diseaseOverride: SlimeLung
+          diseaseAmountOverride: 1000000
+      - element: Hydrogen
+        weight: 1       
+        overrides:
+          massMultiplier: 50
+      - element: Methane
+        weight: 1       
+        overrides:
+          massMultiplier: 50

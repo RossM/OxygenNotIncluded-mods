@@ -1,0 +1,7 @@
+name: STRINGS.WORLD_TRAITS.CRYOVOLCANOES.NAME
+description: STRINGS.WORLD_TRAITS.CRYOVOLCANOES.DESCRIPTION
+colorHex: 91D8F0
+
+globalFeatureTemplateMods:
+  feature_geyser_cryovolcano: 5
+  

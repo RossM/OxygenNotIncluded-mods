@@ -1,0 +1,20 @@
+name: STRINGS.WORLD_TRAITS.LUSH.NAME
+description: STRINGS.WORLD_TRAITS.LUSH.DESCRIPTION
+colorHex: 6AD709
+
+globalFeatureMods:
+  features/traits/ForestBubble: 4
+  features/traits/JungleBubble: 4
+  features/traits/HotMarshBubble: 4
+  features/traits/SandstoneBubble: 4
+  
+# additionalSubworldFiles:
+  # - name: subworlds/forest/Forest
+    # weight: 1
+  # - name: subworlds/marsh/HotMarsh
+    # weight: 1
+  # - name: subworlds/sandstone/Sandstone
+    # weight: 1
+  # - name: subworlds/jungle/Jungle
+    # weight: 1
+  
